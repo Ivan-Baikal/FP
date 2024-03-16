@@ -1,0 +1,220 @@
+/* Общий стандрт оформления: */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    word-break: break-word;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Шапка: */
+.header-banner {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom right, #536976, #292E49);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+/* Основа */
+main {
+    display: flex;
+    /* добавляем гибкости дисплею  чтобы разделить на 3 части */
+    flex: 1;
+    /* Растягиваем main на всю доступную высоту */
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    font-family: Verdana;
+    z-index: 1;
+}
+
+.right-column {
+    flex: 20%;
+    justify-content: center;
+    height: auto;
+    /* max-width: 150px; */
+    min-width: 150px;
+    background: LightGray;
+    align-items: center;
+    text-align: center;
+    padding-block: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.left-column {
+    flex: 20%;
+    justify-content: center;
+    height: auto;
+    /* max-width: 100px; */
+    min-width: 100px;
+    background: white;
+    align-items: center;
+    text-align: center;
+    padding-block: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.center-column {
+    flex: 60%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    height: auto;
+    background: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+/* Ноги: */
+footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: #333333;
+    color: #808080;
+    font-family: Verdana;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    z-index: 2;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+
+/* ОСТАЛЬНЫЕ ЭФФЕКТЫ: */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-kerning: inherit;
+}
+
+a:hover {
+    color: red;
+}
+
+/* ЭТУ КНОПУКУ НАДО ПЕРЕДЕЛАТЬ */
+
+.back-to-top {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    /* фиксируем кнопку, чтобы текст был на экране при пролистывании*/
+    bottom: 0;
+    /* Размещаем в нижней части left-column */
+    left: 0;
+    /* Выравниваем по левому краю left-column */
+    width: 100%;
+    /* Ширина родителя left-column */
+    max-width: 100px;
+    height: 100%;
+    /* Высота родителя left-column*/
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    z-index: auto;
+    padding: 30px 0px 0px 0px;
+}
+
+.back-to-top:hover {
+    /* background: linear-gradient(to top left, #536976, #292e49); */
+    background: linear-gradient(to top left, white 10%, #292e49);
+    color: white;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    font-family: Verdana;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    */ top: 50px;
+    /* Отступ от верхней грани кнопки меню */
+    right: 5px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-content a:hover {
+    background-color: DarkGray;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Verdana;
+    color: black;
+    table-layout: 200px;
+}
+
+td {
+    vertical-align: top;
+    text-align: left;
+    width: 250px;
+}
+
+
+@keyframes mymove {
+    50% {
+        border-bottom: 2px solid red;
+    }
+}
+
+th#html-list,
+th#css-list {
+    padding: 8px;
+    border-bottom: 2px solid blue;
+    border-collapse: collapse;
+    animation: mymove 10s infinite;
+    cursor: auto;
+}
+
+.section {
+    text-align: center;
+}
+
+#media {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0 auto 90px;
+}

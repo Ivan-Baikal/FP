@@ -1,0 +1,61 @@
+Здесь перечислены 10 HTML-тегов и 5 CSS-свойств, которые я использовал,
+а также краткое (в одно предложение) описание того, как я решил использовать JavaScript и Bootstrap.
+
+10 HTML-тегов:
+<link>
+<header>
+<div>
+<a>
+<p>
+<hr>
+<h1>
+<h2>
+<h3>
+<h5>
+<main>
+<button>
+<img>
+<video>
+<footer>
+<span>
+<table>
+<tr>
+<th>
+<td>
+<ol>
+<ul>
+<li>
+<form>
+<input>
+
+
+
+
+5 CSS-свойств:
+html, body
+*
+.header-banner
+main
+.right-column
+.left-column
+.center-column
+footer
+a
+a:hover
+.back-to-top
+.back-to-top:hover
+.menu-btn
+.menu-content
+.menu-content a
+.menu-content a:hover
+table
+td
+@keyframes mymove
+th#html-list,
+th#css-list
+.section
+#media
+
+
+
+Using Bootstrap, buttons were added to the Trivia page, JavaScript functions are used on the same page. JavaScript is also used for the menu button.
