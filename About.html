@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="icon" type="image/png" href="/img/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="/styles.css" rel="stylesheet">
+        <!-- Для мобильных устройств -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/script.js"></script>
+        <title>Homepage</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-banner">
+                <button class="menu-btn" onclick="btn(event)">&#8801</button>
+                <div class="menu-content">
+                    <a href="/Pages/FinalProject.html">Final CS50 project</a>
+                    <a href="/Pages/Specification.html">Specification</a>
+                    <a href="/Pages/Trivia.html">Trivia</a>
+                    <a href="/Pages/About.html">About</a>
+                </div>
+                <h1><a href="/index.html">Simple homepage using HTML, CSS, and JavaScript</a></h1>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="left-column">
+                <!-- Кнопка для возврата наверх -->
+                <button class="back-to-top">UP</button>
+            </div>
+
+            <div class="center-column">
+                <!-- Основное содержимое страницы -->
+                <p>This page was created to complete the task of the 8th week of CS50 2024. CS50 materials, <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap library</a>, and <a href="https://www.w3schools.com/html/">HTML manuals</a> were used to create it.</p>
+                <p>In the future, I will try to use it for use in the final CS50 project.</p>
+            </div>
+
+            <div class="right-column">
+                <!-- Место для рекламного баннера -->
+                <img class="ad-banner" src="/img/AD.png" alt="Реклама">
+            </div>
+        </main>
+
+
+        <footer>
+            <div class="footer-banner">
+                <p>
+                    <span class="author-name"><a href="/index.html">Home</a></span>
+                    <span class="author-name"><a href="/Pages/FinalProject.html">Final CS50 project</a></span>
+                    <span class="author-name"><a href="/Pages/Specification.html">Specification</a></span>
+                    <span class="author-name"><a href="/Pages/Trivia.html">Trivia</a></span>
+                    <span class="author-name"><a href="/Pages/About.html">About</a></span>
+                </p>
+                <p>© 2024 Made by <span class="author-name">Ivan</span></p>
+            </div>
+        </footer>
+    </body>
+
+</html>
